@@ -16,5 +16,12 @@ class MessengerServiceTest {
             assertEquals(expendet, actual);
 
         }
+        {
+            MessengerService service = new MessengerService();
+            String actual = service.initials("Vasiliy");
+            String expendet = "V";
+
+            assertEquals(expendet, actual);
+        }
     }
 }
